@@ -77,6 +77,7 @@
 
   #white:hover {
     fill: hsl(171, 66%, 44%);
+    cursor: pointer;
   }
 
   p {
