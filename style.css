@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display&display=swap');
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    3. Allow percentage-based heights in the application
+  */
+  html, body {
+    height: 100%;
+  }
+  /*
+  6. Improve media defaults
+  */
+  img, picture, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    7. Remove built-in form typography styles
+  */
+  button, select {
+    font: inherit;
+  }
+  /*
+    8. Avoid text overflows
+  */
+  h1, h2, h3, h4 {
+    overflow-wrap: break-word;
+    color: var(--Dark-Grayish-Blue);
+  }
+
+  :root {
+   /*  ### Primary */
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+
+/* ### Neutral */
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+  }
+  
+  /*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+
+    background-image: url(./images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+
+    gap: 3.5rem;
+
+    Font-size: 1.2rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+
+  }
+
+  #white:hover {
+    fill: hsl(171, 66%, 44%);
+  }
+
+  p {
+  color:var(--Grayish-Blue) ;
+  overflow-wrap: break-word;
+  }
+
+  @media screen and (min-width: 50em) {
+    body {background-image: url(./images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+  }
+  }
+
+  .first_header_layout, .fifth_layout_formain {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+
+    max-width: 800px;
+    padding: 4%;
+
+    margin-top: 10%;
+  }
+
+  .first_header_layout h1 {
+    font-size: 2.723rem;
+  }
+
+  .copy {
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-weight: 100;
+    border: 9px solid var(--Strong-Cyan);
+
+    width: 120px;
+    height: 120px;
+
+    padding: 4%;
+    border-radius: 50%;
+
+    display: flex;
+    align-self: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .copy p {
+    font-size: 7rem;
+    font-weight: 800;
+    color: var(--Strong-Cyan);
+
+    display: flex;
+    align-self: center;
+  }
+
+button {
+    padding: 2%;
+    border-radius: 30px;
+    border: none;
+    width: 90%;
+    color: white;
+    box-shadow: 0px 17px 14px 9px rgba(0,0,0,0.07);
+}
+
+button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.buttons { 
+ display: flex;
+ flex-direction: column;
+
+ align-items: center;
+ gap: 16px;
+
+ padding: 4%;
+}
+
+@media screen and (min-width: 50em) {
+  .buttons { 
+    flex-direction: row;
+}
+ }
+
+.green {
+ background-color: var(--Strong-Cyan);
+}
+
+.purple {
+    background-color: var(--Light-Blue);
+}
+
+.second_header_layout, .article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+
+    justify-content: center;
+    max-width: 800px;
+
+    margin-top: 120px;
+
+    padding: 4%;
+  }
+
+  .first_layout_formain {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 100px;
+    align-items: center;
+    text-align: center;
+
+    transform: translateX(0);
+    padding: 20px;
+  }
+
+
+ @media screen and (min-width: 50em) {
+
+  .first_layout_formain {
+    grid-template-columns: 1fr 400px;
+    text-align: left;
+
+    transform: translateX(-100px);
+    padding: 0;
+  }
+ 
+  }
+
+  .wrap {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 40px;
+  }
+
+  .short {
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+  }
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  /*   padding: 10%; */
+}
+
+.third_layout_formain {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-gap: 20px;
+
+    text-align: center;
+    padding: 20px;
+}
+
+@media screen and (min-width: 50em) {
+.third_layout_formain {
+    grid-template-columns: repeat(3, 400px);
+}
+}
+
+.under_layout {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    max-width: 800px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 70px;
+
+  background-color: hsl(201, 11%, 96%);;
+
+  width: 100%;
+
+  padding: 5%;
+}
+
+
+
+.footer_wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 40px;
+  
+}
+
+.footer_wrap a {
+  text-align: center;
+  text-decoration: none;
+  color: var(--Grayish-Blue);
+}
+
+@media screen and (min-width: 50em) {
+ footer{flex-direction: row; } 
+.footer_wrap { flex-flow: row nowrap; align-items: start; gap: 70px;}
+.footer_wrap a {
+  text-align: left;}
+
+.the_link {
+  gap: 4px;
+}
+}
+
+.the_link {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.the_link a:hover {
+  color: var(--Strong-Cyan);
+}
+
+footer .copy {
+    
+  border: 5px solid var(--Strong-Cyan);
+
+  width: 60px;
+  height: 60px;
+
+  padding: 2%;
+  border-radius: 50%;
+
+  display: flex;
+  align-self: center;
+  text-align: center;
+  justify-content: center;
+}
+
+footer .copy p {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--Strong-Cyan);
+
+  display: flex;
+  align-self: center;
+}
+
+.icon {
+  display: flex;
+  gap: 20px;
+}
+
+.white {
+  fill: red;
+}
+
+
+
+.fourth_layout_formain {
+  display: grid;
+  grid-template-columns: 400px;
+  grid-gap: 80px;
+  align-items: center;
+  place-items: center;
+
+  margin-top: 10%;
+}
+
+
+
+@media screen and (min-width: 50em) { 
+  .fourth_layout_formain {
+    grid-template-columns: repeat(5, 250px);
+    grid-gap: 20px;
+     }
+}
