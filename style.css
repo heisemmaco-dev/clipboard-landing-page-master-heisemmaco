@@ -110,7 +110,6 @@
 
   .copy {
     font-family: 'Wix Madefor Display', sans-serif;
-    font-weight: 100;
     border: 9px solid var(--Strong-Cyan);
 
     width: 120px;
@@ -127,7 +126,7 @@
 
   .copy p {
     font-size: 7rem;
-    font-weight: 800;
+    font-weight: 600;
     color: var(--Strong-Cyan);
 
     display: flex;
@@ -264,7 +263,7 @@ footer {
   background-color: hsl(201, 11%, 96%);;
 
   width: 100%;
-
+  position: relative;
   padding: 5%;
 }
 
@@ -360,3 +359,6 @@ footer .copy p {
     grid-gap: 20px;
      }
 }
+
+.attribution { font-size: 11px; text-align: center;  position: absolute; bottom: 0; }
+.attribution a { color: hsl(228, 45%, 44%); }
